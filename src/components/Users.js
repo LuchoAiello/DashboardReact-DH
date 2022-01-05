@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/css/cssPersonalizado.css'
 
 
-function Movie(){
+function User(){
     return(
         <React.Fragment>
 				    {/*<!-- PRODUCTS LIST -->*/}
@@ -36,4 +36,4 @@ function Movie(){
         </React.Fragment>
     )
 }
-export default Movie;
+export default User;

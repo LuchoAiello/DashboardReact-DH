@@ -1,7 +1,8 @@
 import React from 'react';
 import imagenFondo from '../assets/images/tablaSnow.jpg';
-import GenresInDb from './GenresInDb';
+import GenresInDb from './ProductsCategoryInDb';
 import ContentRowMovies from './ContentRowMovies';
+import ProductsInDb from './ProductsInDb';
 function ContentRowTop(){
     return(
         <React.Fragment>
@@ -37,6 +38,9 @@ function ContentRowTop(){
 
 						{/*<!-- Genres in DB -->*/}
 						<GenresInDb />
+
+						{/*<!-- Products in DB -->*/}
+						<ProductsInDb />
 
 						{/*<!--End Genres In Db-->*/}		
 					</div>
