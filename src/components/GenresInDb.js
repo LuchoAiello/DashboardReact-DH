@@ -2,16 +2,7 @@ import React from 'react';
 import Genre  from './Genre';
 
 let genres = [
-    {genre: 'Acción'},
-    {genre: 'Animación'},
-    {genre: 'Aventura'},
-    {genre: 'Ciencia Ficción'},
-    {genre: 'Comedia'},
-    {genre: 'Documental'},
-    {genre: 'Drama'},
-    {genre: 'Fantasia'},
-    {genre: 'Infantiles'},
-    {genre: 'Musical'}
+    
 ]
 
 function GenresInDb(){

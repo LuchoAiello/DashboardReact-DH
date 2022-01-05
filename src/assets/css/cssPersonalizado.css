@@ -42,6 +42,19 @@
     !important;
     background-size: cover !important; 
 }
+
+.cambiarBoton {
+    background-image: linear-gradient(to top right,  
+    #ebad89, 
+    #e792b3,
+    #e690a8,
+    #b36b7f) 
+    !important;
+    background-size: cover !important; 
+    color: black !important;
+    font-weight: bold !important;
+}
+
 .cambiar1 {
     background-image: linear-gradient(to top left,  
     #ebad89, 
