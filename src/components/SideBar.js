@@ -1,16 +1,16 @@
 import React from 'react';
-import image from '../assets/images/logo-DH.png';
+import '../assets/css/cssPersonalizado.css'
 
 function SideBar(){
     return(
         <React.Fragment>
             {/*<!-- Sidebar -->*/}
-            <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul className="img-sidebar navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 {/*<!-- Sidebar - Brand -->*/}
-                <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
-                    <div className="sidebar-brand-icon">
-                        <img className="w-100" src={image} alt="Digital House"/>
+                <a className='h1-sidebar'href="/">
+                    <div >
+                        <h1 className='h1-sidebar'>BeWild</h1>
                     </div>
                 </a>
 
@@ -33,23 +33,23 @@ function SideBar(){
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
                     <a className="nav-link collapsed" href="/">
-                        <i className="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
+                    <i class="fas fa-shopping-cart"></i>
+                        <span>Productos</span>
                     </a>
                 </li>
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
                     <a className="nav-link" href="/">
-                        <i className="fas fa-fw fa-chart-area"></i>
-                        <span>Charts</span></a>
+                    <i class="fas fa-tshirt"></i>
+                        <span>Categorias</span></a>
                 </li>
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item">
                     <a className="nav-link" href="/">
-                        <i className="fas fa-fw fa-table"></i>
-                        <span>Tables</span></a>
+                    <i class="fas fa-users"></i>
+                        <span>Usuarios</span></a>
                 </li>
 
                 {/*<!-- Divider -->*/}

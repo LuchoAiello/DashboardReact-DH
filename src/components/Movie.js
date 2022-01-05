@@ -1,18 +1,18 @@
 import React from 'react';
+import '../assets/css/cssPersonalizado.css'
 
-import MovieList from './MovieList';
 
 function Movie(){
     return(
         <React.Fragment>
 				    {/*<!-- PRODUCTS LIST -->*/}
-					<h1 className="h3 mb-2 text-gray-800">All the movies in the Database</h1>
+					<h1 className="h3 mb-2 h1-contentRowTop2">Usuarios</h1>
 					
 					{/*<!-- DataTales Example -->*/}
-					<div className="card shadow mb-4">
-						<div className="card-body">
+					<div className="card shadow mb-4 userDB">
+						<div className="card-body cardColor ">
 							<div className="table-responsive">
-								<table className="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+								<table className="table table-bordered " id="dataTable" width="100%" cellspacing="0">
 									<thead>
 										<tr>
                                             <th>Id</th>

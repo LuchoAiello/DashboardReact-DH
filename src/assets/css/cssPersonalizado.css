@@ -1,0 +1,110 @@
+.h1-sidebar {
+    color: black;
+    list-style-type: none !important; 
+    text-align: center;
+    margin-top: 3%;
+    opacity: 0.8;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+.img-sidebar {
+    background-image: url(https://fondosmil.com/fondo/24264.jpg) !important;
+    background-size: cover !important;
+    background-color:rgba(0, 0, 0, 0.5) !important;
+    opacity: 1;
+}
+
+.h1-contentRowTop {
+    color: black;
+    list-style-type: none !important; 
+    opacity: 0.8;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+.h1-contentRowTop1 {
+    color: black;
+    list-style-type: none !important; 
+    opacity: 0.8;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-size:  25px !important;
+}
+
+
+.cambiar {
+    background-image: linear-gradient(to top right,  
+    #ebad89, 
+    #e792b3,
+    #e690a8,
+    #b36b7f) 
+    !important;
+    background-size: cover !important; 
+}
+.cambiar1 {
+    background-image: linear-gradient(to top left,  
+    #ebad89, 
+    #e792b3,
+    #e690a8,
+    #b36b7f) 
+    !important;
+    background-size: cover !important; 
+}
+
+.card-header {
+    font-size: 30px !important;
+}
+
+.border-left-card {
+    border-left:.25rem solid #df95b1 !important;
+ }
+
+ .card-icon{
+    color: black!important;
+    opacity: 0.8;
+ }
+
+ .userDB {
+    position: relative;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-top: -12px !important;
+    z-index: 0;
+ }
+
+ .h1-contentRowTop2 {
+    position: relative;
+    z-index: 1;
+    color: black;
+    list-style-type: none !important; 
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-size:  25px !important;
+    background-image: linear-gradient(to top right,  
+    #ebad89, 
+    #e792b3,
+    #e690a8,
+    #b36b7f) 
+    !important;
+    margin-left: 1.9% !important;
+    width: 96.2% !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: -5% !important;
+    padding: 15px !important;
+}
+
+.cardColor {
+    background-image: linear-gradient(to top right,  
+    white 50%,
+    rgb(231, 230, 230))
+    !important;
+}
+
+@media (min-width: 1380px){
+   .h1-contentRowTop2 {
+       margin-left: 1.23% !important;
+       width: 97.5% !important;
+   }
+}
