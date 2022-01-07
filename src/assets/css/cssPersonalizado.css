@@ -9,6 +9,16 @@
     font-family: 'Rampart One', cursive;
 }
 
+.tableBorder {
+    border:black solid 2px !important;
+    color: white; 
+    opacity: 0.8;
+}
+
+.tableP {
+    font-size: 20px !important;
+}
+
 .img-sidebar {
     background-image: url(https://fondosmil.com/fondo/24264.jpg) !important;
     background-size: cover !important;

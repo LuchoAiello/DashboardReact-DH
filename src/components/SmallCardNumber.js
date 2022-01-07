@@ -1,6 +1,8 @@
 import React from 'react';
 import SmallCard from './SmallCard';
-class NumberData extends React.Component{
+import {Component} from 'react';
+
+class NumberData extends Component{
     constructor(){
         super()
         this.state = {
@@ -42,14 +44,14 @@ render (){
                 icon: "fas fa-user",
             }
             
-            let user = {
+            let category = {
                 color: "dark",
                 title: "Cantidad de categorías",
                 value: this.state.countCategories,
                 icon: "fas fa-tshirt",
             }
             
-            card = [productInDataBase, amount, user];
+            card = [productInDataBase, amount, category];
 
             value = card.map((product,index)=>{
                 return <SmallCard  {...product} key= {index}/>

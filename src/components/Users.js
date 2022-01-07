@@ -1,9 +1,30 @@
 import React from 'react';
-import '../assets/css/cssPersonalizado.css'
+import '../assets/css/cssPersonalizado.css';
+import { Component } from 'react';
+import UserList from './UserList'
 
 
-function User(){
-    return(
+class User extends Component {
+    constructor(){
+        super();
+        this.state = {
+            usersList: []
+        }
+    };
+ 
+    componentDidMount() {
+        fetch('api/users')
+        .then((respuesta) => {
+            return respuesta.json();
+        })
+        .then((users) => {
+            this.setState({usersList : users.users})
+        })
+        .catch((error) => console.log(error));
+	}
+
+    render(){
+     return(
         <React.Fragment>
 				    {/*<!-- PRODUCTS LIST -->*/}
 					<h1 className="h3 mb-2 h1-contentRowTop2">Usuarios</h1>
@@ -15,25 +36,29 @@ function User(){
 								<table className="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 									<thead>
 										<tr>
-                                            <th>Id</th>
-                                            <th>Nombre</th>
-                                            <th>Apellido</th>
-                                            <th>Email</th>
+                                            <th className='tableBorder tableP bg-secondary'>Id</th>
+                                            <th className='tableBorder tableP bg-secondary'>Nombre</th>
+                                            <th className='tableBorder tableP bg-secondary' >Apellido</th>
+                                            <th className='tableBorder tableP bg-secondary'>Email</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>01</td>
-											<td>Juan</td>
-											<td>Martinez</td>
-                                            <td>Jmartinez@gmail.com</td>
-										</tr>
+								     	{
+                                          this.state.usersList.map((user,index)=>{
+                                            return <UserList {...user} key={index} />
+                                           })
+					
+                                        } 
 									</tbody>
 								</table>
 							</div>
 						</div>
 					</div>            
         </React.Fragment>
-    )
+		
+        )
+	
+  }
 }
+
 export default User;
