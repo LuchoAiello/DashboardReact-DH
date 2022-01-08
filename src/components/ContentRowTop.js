@@ -1,8 +1,9 @@
 import React from 'react';
-import imagenFondo from '../assets/images/tablaSnow.jpg';
-import GenresInDb from './ProductsCategoryInDb';
-import ContentRowMovies from './ContentRowMovies';
-import ProductsInDb from './ProductsInDb';
+import ProductsCategoryInDb from './ProductsCategoryInDb';
+import SmallCardNumber from './SmallCardNumber';
+import { Component } from 'react';
+import tablaSnow from '../assets/images/tablaSnow.jpg'
+
 function ContentRowTop(){
     return(
         <React.Fragment>
@@ -13,7 +14,7 @@ function ContentRowTop(){
 					</div>
 				
 					{/*<!-- Content Row Movies-->*/}
-					<ContentRowMovies />
+					<SmallCardNumber />
 					{/*<!-- End movies in Data Base -->*/}
 					
 	
@@ -27,28 +28,18 @@ function ContentRowTop(){
 								</div>
 								<div className="card-body">
 									<div className="text-center ">
-										<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={imagenFondo} alt=" Star Wars - Mandalorian "/>
+										<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={tablaSnow} alt="Ultimo Producto agregado"/>
 									</div>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa citationem ratione aperiam voluptatum non corporis ratione aperiam voluptatum quae dolorem culpa ratione aperiam voluptatum?</p>
+									<p>descripcion</p>
 									<a className="btn cambiarBoton" target="_blank" rel="nofollow" href="/">Ver detalle del producto</a>
 								</div>
 							</div>
 						</div>
-						{/*<!-- End content row last movie in Data Base -->*/}
-
-						{/*<!-- Genres in DB -->*/}
-						<GenresInDb />
-
-						{/*<!-- Products in DB -->*/}
-						<ProductsInDb />
-
-						{/*<!--End Genres In Db-->*/}		
+						<ProductsCategoryInDb />	
 					</div>
 				</div>
-				{/*<!--End Content Row Top-->*/}
 
         </React.Fragment>
     )
-
-}
+  }
 export default ContentRowTop;
