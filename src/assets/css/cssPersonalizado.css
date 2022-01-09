@@ -45,6 +45,12 @@
     font-size: 15px;
     text-decoration:none;
     color:white;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.cardE:hover{
+    color: white;
 }
 
 .cardContentWidth {
