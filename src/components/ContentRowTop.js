@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductsCategoryInDb from './ProductsCategoryInDb';
 import SmallCardNumber from './SmallCardNumber';
+import ProductsList from './ProductsList';
 import { Component } from 'react';
 // import tablaSnow from '../assets/images/tablaSnow.jpg'
 
@@ -59,6 +60,7 @@ class Product extends Component {
 								</div>
 							</div>
 							<ProductsCategoryInDb />	
+							<ProductsList />
 						</div>
 					</div>
 	
