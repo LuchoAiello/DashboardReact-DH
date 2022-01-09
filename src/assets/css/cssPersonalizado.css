@@ -43,6 +43,8 @@
     padding-top: 0px !important;
     width: 100% !important;
     font-size: 15px;
+    text-decoration:none;
+    color:white;
 }
 
 .cardContentWidth {
