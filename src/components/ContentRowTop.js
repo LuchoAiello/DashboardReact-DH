@@ -54,7 +54,7 @@ class Product extends Component {
 											<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={this.state.productImage} alt="Ultimo Producto agregado"/>
 										</div>
 										<p>{this.state.productDescription}</p>
-										<a href="http://localhost:3090/api/products/last-product" className="btn cambiarBoton" target="_blank" rel="nofollow" > Ver detalle del producto</a>
+										<a href="http://localhost:3090/api/products/last-product" className="btn cambiarBoton" target="_blank" rel="noreferrer" > Ver detalle del producto</a>
 									</div>
 								</div>
 							</div>
